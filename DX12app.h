@@ -12,7 +12,7 @@ struct DX12app :DX12Basic {
 	DX12app& operator=(DX12app&&) = delete;
 	virtual ~DX12app();
 	virtual void onInit(void);
-	virtual int run(void);
+	int run(void);
 	virtual LRESULT yourWndProc(HWND yourHwnd, UINT yourMsg, WPARAM wParam, LPARAM lParam);
 	HWND renderTargetWnd;
 protected:
